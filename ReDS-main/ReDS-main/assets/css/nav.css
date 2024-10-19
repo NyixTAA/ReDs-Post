@@ -1,0 +1,66 @@
+:root {
+    --branco: #FFFFFF;
+    --background: #101010;
+    --background-nav_gradient: linear-gradient(180deg, rgba(12,12,12,1) 49%,rgba(14,14,14,1) 100%);
+    --vermelho: #D3111F;
+    --teko: "Teko", sans-serif;
+}
+
+.navbar {
+    height: 15vh;
+    background: var(--background-nav_gradient);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.links_nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links_nav li a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.5em;
+}
+
+.links_nav li a:hover {
+    color: #D3111F;
+}
+
+.pagina_ativa {
+    border-bottom: 2.5px solid var(--vermelho);
+}
+
+.icon-camargo_nav {
+    width: 8vw;
+    height: 8vh;
+    background-image: url("../img/camargo_logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.icon-camargo_nav:hover {
+    background-image: url(../img/camargo_logo_hover.svg);
+    transition: 0.3s;
+}
+
+.logo_nav {
+    width: 10vw;
+    height: 10vh;
+    background-image: url("../img/reds_logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.logo_nav:hover {
+    background-image: url("../img/reds_logo_hover.svg");
+    transition: 0.3s;
+}
